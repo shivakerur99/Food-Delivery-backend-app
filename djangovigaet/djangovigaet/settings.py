@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-8!irulmyfao3=v4f!4(_*rb&rsm1&+6gocsjeyfn^+4ia&7h)3
 DEBUG = True
 
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1',"vigaentertainment-assignment.onrender.com"]
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -147,6 +147,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS=[
     "http://localhost:8000",
     "http://127.0.0.1:8000",
-    "vigaentertainment-assignment.onrender.com"
+    'https://vigaentertainment-assignment.onrender.com'
 ]
 
