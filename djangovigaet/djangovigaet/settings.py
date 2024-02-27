@@ -83,12 +83,18 @@ WSGI_APPLICATION = 'djangovigaet.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+
+#################database for deployed application
 import dj_database_url
 DATABASES = {
 	"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
-
+####important note use this db for localhost network ######################
+################################################################
+###################################################################
+############################################
 # DATABASES = {
 #     'default': {
 #         'ENGINE': os.environ.get('DB_DRIVER', 'django.db.backends.postgresql'),
@@ -99,12 +105,6 @@ DATABASES = {
 #         'PORT': os.environ.get('PG_PORT', '5432'),
 #     }
 # }
-# DATABASES={
-#     'default':dj_database_url.parse('postgres://postgres:Shivanand99805257!@localhost:5432/vigadb')
-#           }
-
-# Password validation
-# https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {

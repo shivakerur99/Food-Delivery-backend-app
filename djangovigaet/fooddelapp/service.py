@@ -12,7 +12,7 @@
 #         pricing = Pricing.objects.filter(
 #             organization_id=organization_id,
 #             zone=zone,
-#             item_id=item_id  # Changed to item_id
+#             item_id=item_id  # filtering based on item_id
 #         ).first()
 
 #         if not pricing:
@@ -56,7 +56,6 @@ class PriceCalculator:
         base_price = pricing.fix_price
         per_km_price = pricing.km_price
 
-        # Uncomment and correct the conditions for different item types
         per_km_price = Decimal('1.5')
 
         if item_type == "non_perishable":
