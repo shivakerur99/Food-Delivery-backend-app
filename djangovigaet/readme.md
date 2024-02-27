@@ -3,7 +3,7 @@ install all packages present requirements.txt
 
 and connect postgressql db to application as i already mentioned in settings.py where i have given my database credentials
 
-# as i am deploying it on render i used their external database that link is given in .env file check it out try on localhost also it runs on localhost also 
+as i am deploying it on render i used their external database that link is given in .env file check it out try on localhost also it runs on localhost also 
 
 steps 
 create virtualenv for project
@@ -17,7 +17,7 @@ i intially had doubts i asked through email as i didn't get response i understoo
 
 I HAVE DONE BOTH API DOCUMENTATION FOR LOCALHOST AS WELL AS DEPLOYED IN IT CHECK IT OUT DIRECTLY RUN ON POSTMAN FOR DEPLOYED IT TAKS LITTLE TIME INITALLY BUT IT WORKS
 
-# DEPLOYED APP VIDEO LINK:https://drive.google.com/file/d/1mMdXDxXCfD1RGh8aDF3mY_9tRY5mhW4g/view?usp=sharing
+# DEPLOYED APP VIDEO LINK:https://drive.google.com/file/d/1r6iFuioAcYK5d2WymF6v776rWsS1e7ar/view?usp=sharing
 
 # thank you for giving me opportunity 
 
