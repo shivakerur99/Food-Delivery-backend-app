@@ -83,18 +83,22 @@ WSGI_APPLICATION = 'djangovigaet.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-
+import dj_database_url
 DATABASES = {
-    'default': {
-        'ENGINE': os.environ.get('DB_DRIVER', 'django.db.backends.postgresql'),
-        'NAME': os.environ.get('PG_DB', 'vigadb'),
-        'USER': os.environ.get('PG_USER', 'postgres'),
-        'PASSWORD': os.environ.get('PG_PASSWORD', 'Shivanand99805257!'),
-        'HOST': os.environ.get('PG_HOST', 'localhost'),
-        'PORT': os.environ.get('PG_PORT', '5432'),
-    }
+	"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
-# import dj_database_url
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': os.environ.get('DB_DRIVER', 'django.db.backends.postgresql'),
+#         'NAME': os.environ.get('PG_DB', 'vigadb'),
+#         'USER': os.environ.get('PG_USER', 'postgres'),
+#         'PASSWORD': os.environ.get('PG_PASSWORD', 'Shivanand99805257!'),
+#         'HOST': os.environ.get('PG_HOST', 'localhost'),
+#         'PORT': os.environ.get('PG_PORT', '5432'),
+#     }
+# }
 # DATABASES={
 #     'default':dj_database_url.parse('postgres://postgres:Shivanand99805257!@localhost:5432/vigadb')
 #           }
