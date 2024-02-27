@@ -90,7 +90,7 @@ DATABASES = {
         'NAME': os.environ.get('PG_DB', 'vigadb'),
         'USER': os.environ.get('PG_USER', 'postgres'),
         'PASSWORD': os.environ.get('PG_PASSWORD', 'Shivanand99805257!'),
-        'HOST': os.environ.get('PG_HOST', 'localhost'),
+        'HOST': os.environ.get('PG_HOST', '127.0.0.1'),
         'PORT': os.environ.get('PG_PORT', '5432'),
     }
 }
