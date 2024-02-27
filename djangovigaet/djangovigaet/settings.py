@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-8!irulmyfao3=v4f!4(_*rb&rsm1&+6gocsjeyfn^+4ia&7h)3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-
+# ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1']
 
 # Application definition
 
@@ -84,20 +84,20 @@ WSGI_APPLICATION = 'djangovigaet.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': os.environ.get('DB_DRIVER', 'django.db.backends.postgresql'),
-#         'NAME': os.environ.get('PG_DB', 'vigadb'),
-#         'USER': os.environ.get('PG_USER', 'postgres'),
-#         'PASSWORD': os.environ.get('PG_PASSWORD', 'Shivanand99805257!'),
-#         'HOST': os.environ.get('PG_HOST', 'localhost'),
-#         'PORT': os.environ.get('PG_PORT', '5432'),
-#     }
-# }
-import dj_database_url
-DATABASES={
-    'default':dj_database_url.parse('postgres://postgres:Shivanand99805257!@localhost:5432/vigadb')
-          }
+DATABASES = {
+    'default': {
+        'ENGINE': os.environ.get('DB_DRIVER', 'django.db.backends.postgresql'),
+        'NAME': os.environ.get('PG_DB', 'vigadb'),
+        'USER': os.environ.get('PG_USER', 'postgres'),
+        'PASSWORD': os.environ.get('PG_PASSWORD', 'Shivanand99805257!'),
+        'HOST': os.environ.get('PG_HOST', 'localhost'),
+        'PORT': os.environ.get('PG_PORT', '5432'),
+    }
+}
+# import dj_database_url
+# DATABASES={
+#     'default':dj_database_url.parse('postgres://postgres:Shivanand99805257!@localhost:5432/vigadb')
+#           }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -139,3 +139,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOWED_ORIGINS=[
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
+
